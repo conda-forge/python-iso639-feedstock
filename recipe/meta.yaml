@@ -1,18 +1,18 @@
 {% set name = "python-iso639" %}
-{% set version = "2024.2.7" %}
+{% set version = "2024.4.27" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/python-iso639-{{ version }}.tar.gz
-  sha256: c323233348c34d57c601e3e6d824088e492896bcb97a61a87f7d93401a305377
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 97e63b5603e085c6a56a12a95740010e75d9134e0aab767e0978b53fd8824f13
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
