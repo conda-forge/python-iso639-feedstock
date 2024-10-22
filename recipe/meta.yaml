@@ -1,5 +1,5 @@
 {% set name = "python-iso639" %}
-{% set version = "2024.4.27" %}
+{% set version = "2024.10.22" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 97e63b5603e085c6a56a12a95740010e75d9134e0aab767e0978b53fd8824f13
+  sha256: 750f21b6a0bc6baa24253a3d8aae92b582bf93aa40988361cd96852c2c6d9a52
 
 build:
   noarch: python
