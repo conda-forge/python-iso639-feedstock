@@ -1,5 +1,5 @@
 {% set name = "python-iso639" %}
-{% set version = "2026.4.20" %}
+{% set version = "2026.7.23" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 00570376d24788f889578991bb2ad93c030a014c1d373f64f2ceffe84732a537
+  sha256: c176522e92cc76b3581cd354e5544330980a36b017d7c291717eface84eaff57
 
 build:
   noarch: python
