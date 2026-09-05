@@ -31,7 +31,9 @@ tests:
       imports:
         - iso639
       pip_check: true
-      python_version: ${{ python_min }}
+      python_version:
+        - ${{ python_min }}
+        - "*"
 
 about:
   summary: Look-up utilities for ISO 639 language codes and names
